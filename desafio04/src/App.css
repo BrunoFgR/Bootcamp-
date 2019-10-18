@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #eee;
+  text-rendering: optimizeLegibility !important;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+header {
+  background: #4a90e2;
+  height: 64px;
+
+  display: flex;
+  align-items: center;
+}
+
+header nav {
+  padding: 0 42px;
+
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav img {
+  margin: 20px 0;
+}
+
+header nav div {
+  display: flex;
+  align-items: center;
+}
+
+header nav div span {
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  margin-right: 8px;
+}
+
+header nav div i {
+  width: 24px;
+  height: 24px;
+  color: #fff;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 15%;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+}
+
+.post-header div {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-header div span {
+  font-size: 12px;
+  color: #a9a9a9;
+}
+
+.post-header div span:first-child {
+  font-weight: bold;
+  font-size: 14px;
+  color: #4a4a4a;
+}
+
+.post-content {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+  font-size: 12px;
+  margin-bottom: 10px;
+  line-height: 20px;
+}
+
+.comment {
+  display: flex;
+  align-content: center;
+}
+
+.comment p {
+  font-size: 12px;
+  background: #eee;
+  padding: 10px 15px;
+  border-radius: 20px;
+  margin: 10px 20px 10px 10pxgit in;
+  line-height: 20px;
+}
+
+.comment img.avatar {
+  margin-right: 0;
+  margin-top: 10px;
+}
+
+.comment span {
+  color: #4a4a4a;
+  font-weight: bold;
+  font-size: 13px;
+  margin-right: 5px;
+}
