@@ -3,6 +3,7 @@ import { isBefore, parseISO, startOfDay, endOfDay } from 'date-fns';
 import { Op } from 'sequelize';
 import Meetup from '../models/Meetup';
 import User from '../models/User';
+import File from '../models/File';
 
 class MeetupController {
   async index(req, res) {
@@ -23,7 +24,13 @@ class MeetupController {
       include: [
         {
           model: User,
-          attributes: ['id', 'name', 'email'],
+          as: 'user',
+          attributes: ['id', 'name'],
+        },
+        {
+          model: File,
+          as: 'image',
+          attributes: ['path', 'url'],
         },
       ],
       limit: 10,
